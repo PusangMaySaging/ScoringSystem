@@ -1,0 +1,337 @@
+.teams{
+    margin: 7vh auto;
+    height: 70vh;
+    width:100%;
+}
+.teams-title{
+    width: 80%;
+    margin: auto;
+    height: 10vh;
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.teams-title span{
+   color:var(--secondary);
+   font-weight:600;
+    font-size:2.5em;
+}
+.team-lists{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    row-gap: 50px;
+  
+}
+.team-list{
+    background-color:#f9fbfa;
+    border-radius: 10px;
+    max-width:328px;
+    overflow: hidden;
+    filter:drop-shadow(2px 2px 2px#e3e3e3);
+   
+}
+.card-bg{
+    height:25vh;
+    max-height: 200px;
+}
+.card-profile{
+    width: 30%;
+    top: 8.0em;
+    min-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    border:4px solid #5ed668;
+    background-color: white;
+    position: absolute;
+    border-radius: 100%;
+    height:10vh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.card-profile-name{
+    font-size: 24px;
+    font-weight: bold;
+    font-style:italic;
+}
+.card-stats{
+    background-color:#ffffff;
+    height:20vh;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    max-height:200px;
+    cursor: pointer;
+}
+.settings{
+    width:90%;
+    height:5vh;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    position:relative;
+    z-index: 2;
+}
+.settings-icon{
+    color:gray;
+    cursor: pointer;
+}
+.settings-modal{
+    position: absolute;
+    height:5vh;
+    width: 100%;
+    
+}
+
+.settings-modal ul{
+    display:flex;
+    width:100%;
+    height:5vh;
+    align-items: center;
+    background: #dbdbd9;   
+    justify-content:center;
+}
+.update{
+    color:#5ed668;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 25px;
+    z-index: 3;
+}
+.delete{
+    color:#c74a4e;
+    font-weight: 600;
+    cursor:pointer;
+    z-index: 3;
+    margin-left: 25px;
+}
+.no-display{
+    display:none;
+}
+.card-stats-team{
+  font-size: 25px;
+  font-weight: 600;
+  
+}
+.card-stats-wrapper{
+    width:100%;
+    margin: auto;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    background-color:#f9fbfa;
+}
+.card-stats-teamname{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    
+}
+.card-stats-wrapper-column{
+    width:90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card-stats-team-score, .card-stats-team-pos{
+    font-weight: 600;
+}
+.card-stats-wrapper span{
+    color:gray;
+}
+.modal-container,.update-modal-container{
+    width:100%;
+    height: 41vh;
+    position: absolute;
+    z-index: 4;
+    background: #ffffff;
+}
+.modal-title{
+    background-color:#c74a4e;
+    color:var(--primary);
+    height:10vh;
+    border-radius: 5px;
+}
+.modal-title span{
+    font-size: 24px;
+    line-height: 10vh;
+    margin-left: 10px;
+    font-weight:600;
+}
+.delete-team-message{
+    font-size: 18px;
+    text-align: center;
+    color:gray;
+    width:90%;
+    margin:25px auto;
+    font-weight:600;
+}
+.btn{
+    width:110px;
+    height:35px ;
+    font-size: 14px;
+    border-radius: 5px;
+    border:none;
+    color:var(--primary);
+    font-weight:600;
+    letter-spacing: 1px;
+}
+.delete-team-buttons{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+  
+}
+.cancel-btn{
+    color:var(--secondary);
+  
+}
+.danger{
+    background:#c74a4e;
+}
+.good{
+    background:#16c79a;
+}
+.danger-text{
+    color:#c74a4e;
+}
+.good-text{
+    color:#16c79a;
+}
+
+.update-modal{
+    background-color: var(--secondary);
+}
+.modal-update-form{
+    width:90%;
+    margin:25px auto;
+    height: 30vh;
+}
+.modal-update-form label{
+    display: block;
+    font-size: 18px;
+}
+.update-form-input{
+    height:30px;
+    width:100%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.update-team-form-wrapper{
+    margin-bottom: 15px;
+}
+.margin{
+    margin-left: 25px;
+}
+.create-btn{
+    background:#16c79a;
+    margin-right: 120px;
+    height: 40px;
+    width:130px;
+    font-size: 16px;
+}
+
+.random-profile{
+    width:100%;
+    height:20vh;
+    position:absolute;
+    background:red;
+    z-index: -1;
+}
+.bg1{
+    background: url('../images/sports1.svg');
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+.bg2{
+    background: url('../images/sports2.svg');
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+.bg3{
+    background: url('../images/sports3.svg');
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+.bg4{
+    background: url('../images/sports4.svg');
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+.bg5{
+    background: url('../images/sports5.svg');
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+.create-modal{
+    position:fixed;
+    width:100%;
+    height:100vh;
+   background:rgba(1,1,1,0.5);
+    z-index: 8;
+}
+.create-modal-container{
+    position: absolute;
+    background:white;
+    width: 20%;
+    top:15em;
+    left:40%;
+    border-radius: 10px;
+    z-index: 10;
+}
+.empty-bg{
+    background:url('../images/empty.svg');
+    background-repeat:no-repeat;
+    background-size:50em;
+    background-position: top 0em left 10em;
+    
+}
+.modal-message-container{
+    position: fixed;
+    width:21%;
+    filter:drop-shadow(2px 2px 2px#e3e3e3);
+    background:white;
+    height:15vh;
+    bottom: 2em;
+    right:2em;
+    border-radius: 10px;
+    z-index:10;
+}
+.modal-message-title{
+    width: 100%;
+    height:3.5em;
+   
+    text-align:center;
+    border-radius: 5px;
+}
+.modal-message-title span{
+  font-size:24px;
+  font-weight:600;
+  line-height:6vh;
+  color:#FFFFFF;
+ 
+}
+.modal-message-subtitle {
+        text-align: center;          
+  }
+.modal-message-subtitle span{
+
+    font-size:22px;
+    font-weight:600;
+    line-height:8vh;
+   
+  }

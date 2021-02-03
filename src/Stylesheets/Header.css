@@ -1,0 +1,44 @@
+
+
+
+header{
+    background:var(--secondary);
+    height:10vh;
+}
+.header-title{
+    float:left;
+    width: 50%;
+    height:10vh;
+}
+.header-title h1{
+    line-height:10vh;
+    margin-left: 35px;
+    color: var(--primary);
+}
+.full-navigation{
+    float:right;
+    height:10vh;
+    width: 50%;
+  
+}
+.full-navigation nav{
+    display:flex;
+    height:10vh;
+    align-items:center
+}
+ul{
+    list-style:none
+
+}
+.nav-links{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    list-style-type:none;
+}
+.nav-link a{
+    text-decoration:none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary);
+}
